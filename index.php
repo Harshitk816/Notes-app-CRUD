@@ -21,6 +21,10 @@ if(!$conn){
 
 //inserting records
 if(isset($_GET['delete'])){
+
+
+
+  
   $sno=$_GET['delete'];
   $sql="DELETE FROM `notes` WHERE `sno`=$sno";
   $result =mysqli_query($conn, $sql);
